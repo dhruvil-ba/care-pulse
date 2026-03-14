@@ -33,7 +33,7 @@ export function ProviderNav() {
   const pathname = usePathname();
 
   return (
-    <div className="mt-4 flex h-full min-h-0 flex-col gap-4">
+    <div className="mt-4 flex min-h-0 flex-1 flex-col gap-3">
       <div className="rounded-2xl border border-emerald-400/15 bg-emerald-400/6 px-4 py-3">
         <p className="text-[0.65rem] font-semibold uppercase tracking-[0.32em] text-emerald-300/80">
           Provider workspace
@@ -118,7 +118,7 @@ export function ProviderNav() {
         </div>
       </nav>
 
-      <div className="mt-auto mb-2 rounded-2xl border border-white/8 bg-white/[0.04] p-3">
+      <div className="mt-auto shrink-0 rounded-2xl border border-white/8 bg-white/[0.04] p-3">
         <div className="flex items-center gap-2 text-emerald-200">
           <ShieldCheck className="h-4 w-4" />
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-emerald-200/90">Shift summary</p>

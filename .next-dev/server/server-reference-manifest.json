@@ -1,54 +1,5 @@
 {
-  "node": {
-    "16d43607299fdcc165a283bc292f5e974226e4a0": {
-      "workers": {
-        "app/(platform)/patients/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fdhruvilgajjar%2FDesktop%2FBacancy%2FCarePluse%2Fapp%2Factions%2Finvite-patient.ts%22%2C%5B%22invitePatient%22%5D%5D%2C%5B%22%2FUsers%2Fdhruvilgajjar%2FDesktop%2FBacancy%2FCarePluse%2Fapp%2Factions%2Finvitations.ts%22%2C%5B%22createInvitation%22%2C%22revokeInvitation%22%2C%22resendInvitation%22%2C%22acceptInvitation%22%5D%5D%5D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/(platform)/patients/page": "action-browser"
-      }
-    },
-    "2ea2706243f374d68db9c1ec12bc922b205fe5a6": {
-      "workers": {
-        "app/(platform)/patients/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fdhruvilgajjar%2FDesktop%2FBacancy%2FCarePluse%2Fapp%2Factions%2Finvite-patient.ts%22%2C%5B%22invitePatient%22%5D%5D%2C%5B%22%2FUsers%2Fdhruvilgajjar%2FDesktop%2FBacancy%2FCarePluse%2Fapp%2Factions%2Finvitations.ts%22%2C%5B%22createInvitation%22%2C%22revokeInvitation%22%2C%22resendInvitation%22%2C%22acceptInvitation%22%5D%5D%5D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/(platform)/patients/page": "action-browser"
-      }
-    },
-    "4aec1481d5a002a47218fdc5d8dca5504a96006a": {
-      "workers": {
-        "app/(platform)/patients/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fdhruvilgajjar%2FDesktop%2FBacancy%2FCarePluse%2Fapp%2Factions%2Finvite-patient.ts%22%2C%5B%22invitePatient%22%5D%5D%2C%5B%22%2FUsers%2Fdhruvilgajjar%2FDesktop%2FBacancy%2FCarePluse%2Fapp%2Factions%2Finvitations.ts%22%2C%5B%22createInvitation%22%2C%22revokeInvitation%22%2C%22resendInvitation%22%2C%22acceptInvitation%22%5D%5D%5D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/(platform)/patients/page": "action-browser"
-      }
-    },
-    "7a114a2e25960c2e7f68a50ee53076d4a06130b7": {
-      "workers": {
-        "app/(platform)/patients/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fdhruvilgajjar%2FDesktop%2FBacancy%2FCarePluse%2Fapp%2Factions%2Finvite-patient.ts%22%2C%5B%22invitePatient%22%5D%5D%2C%5B%22%2FUsers%2Fdhruvilgajjar%2FDesktop%2FBacancy%2FCarePluse%2Fapp%2Factions%2Finvitations.ts%22%2C%5B%22createInvitation%22%2C%22revokeInvitation%22%2C%22resendInvitation%22%2C%22acceptInvitation%22%5D%5D%5D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/(platform)/patients/page": "action-browser"
-      }
-    },
-    "c2f8fad8e3361dfe3c0c519b5e1fc9100a603925": {
-      "workers": {
-        "app/(platform)/patients/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fdhruvilgajjar%2FDesktop%2FBacancy%2FCarePluse%2Fapp%2Factions%2Finvite-patient.ts%22%2C%5B%22invitePatient%22%5D%5D%2C%5B%22%2FUsers%2Fdhruvilgajjar%2FDesktop%2FBacancy%2FCarePluse%2Fapp%2Factions%2Finvitations.ts%22%2C%5B%22createInvitation%22%2C%22revokeInvitation%22%2C%22resendInvitation%22%2C%22acceptInvitation%22%5D%5D%5D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/(platform)/patients/page": "action-browser"
-      }
-    },
-    "fd028720e56c1f6b57573fc9342482177e724676": {
-      "workers": {
-        "app/provider/signup/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fdhruvilgajjar%2FDesktop%2FBacancy%2FCarePluse%2Fapp%2Factions%2Fprovider-signup.ts%22%2C%5B%22createProviderProfile%22%5D%5D%5D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/provider/signup/page": "action-browser"
-      }
-    }
-  },
+  "node": {},
   "edge": {},
-  "encryptionKey": "VmJxvfWexB5jA+stCn+DGXcW3WJ9a1II1+7ukuCBOmE="
+  "encryptionKey": "7e4Lf2o1IavKHe6bCDG02t/CXNTqg9BrXRfphGpWwHk="
 }

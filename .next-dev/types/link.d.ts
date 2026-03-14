@@ -33,28 +33,28 @@ declare namespace __next_route_internal_types__ {
     | `/appointments`
     | `/care-plans`
     | `/messages`
-    | `/medications`
     | `/patients`
     | `/profile`
+    | `/medications`
     | `/analytics`
     | `/api/analytics`
     | `/api/appointments`
+    | `/api/invitations/accept`
     | `/api/care-plans`
     | `/api/me`
     | `/api/medications`
-    | `/api/invitations/accept`
-    | `/api/messages`
     | `/api/patients`
+    | `/api/messages`
     | `/invitations`
     | `/invite`
     | `/login`
     | `/provider`
     | `/provider/analytics`
-    | `/provider/care-plans`
     | `/provider/appointments`
-    | `/provider/medications`
     | `/provider/invitations`
+    | `/provider/care-plans`
     | `/provider/messaging`
+    | `/provider/medications`
     | `/provider/patients`
     | `/provider/signup`
     | `/signup`

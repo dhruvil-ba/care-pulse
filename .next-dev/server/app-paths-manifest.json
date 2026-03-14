@@ -1,7 +1,3 @@
 {
-  "/login/page": "app/login/page.js",
-  "/page": "app/page.js",
-  "/analytics/page": "app/analytics/page.js",
-  "/(platform)/care-plans/page": "app/(platform)/care-plans/page.js",
-  "/(platform)/appointments/page": "app/(platform)/appointments/page.js"
+  "/analytics/page": "app/analytics/page.js"
 }
