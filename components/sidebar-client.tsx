@@ -8,8 +8,6 @@ import {
   CalendarDays,
   ChevronRight,
   ClipboardList,
-  HeartPulse,
-  MailPlus,
   MessageSquareText,
   Pill,
   ShieldCheck,
@@ -26,8 +24,7 @@ const baseLinks: Array<{ href: Route; label: string; icon: React.ComponentType<{
 ];
 
 const providerOnlyLinks: Array<{ href: Route; label: string; icon: React.ComponentType<{ className?: string }> }> = [
-  { href: "/patients", label: "Patients", icon: Users },
-  { href: "/invitations", label: "Invitations", icon: MailPlus }
+  { href: "/patients", label: "Patients", icon: Users }
 ];
 
 type SidebarClientProps = {
@@ -103,22 +100,18 @@ export function SidebarClient({ role }: SidebarClientProps) {
         </div>
       </nav>
 
-      <div className="mt-auto shrink-0 rounded-2xl border border-white/8 bg-white/[0.04] p-3">
+      <div className="mt-auto shrink-0 rounded-2xl border border-white/8 bg-white/[0.04] p-2.5">
         <div className="flex items-center gap-2 text-emerald-200">
           <ShieldCheck className="h-4 w-4" />
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-emerald-200/90">Care signal</p>
         </div>
-        <div className="mt-3 grid grid-cols-2 gap-2">
+        <div className="mt-2 grid grid-cols-2 gap-2">
           {summary.stats.map((item) => (
             <div key={item.label} className="rounded-xl border border-white/6 bg-slate-950/40 px-3 py-2">
               <p className="text-base font-semibold text-white">{item.value}</p>
               <p className="mt-1 text-[0.65rem] uppercase tracking-[0.16em] text-slate-500">{item.label}</p>
             </div>
           ))}
-        </div>
-        <div className="mt-3 flex items-center gap-2 rounded-xl border border-emerald-400/12 bg-emerald-400/6 px-3 py-2.5">
-          <HeartPulse className="h-4 w-4 text-emerald-300" />
-          <p className="text-[11px] leading-5 text-slate-300">Trendline healthy and response loop on track.</p>
         </div>
       </div>
     </div>

@@ -8,7 +8,6 @@ import {
   CalendarDays,
   ChevronRight,
   ClipboardList,
-  MailPlus,
   MessageSquareText,
   Pill,
   ShieldCheck,
@@ -25,8 +24,7 @@ const coreLinks: Array<{ href: Route; label: string; icon: React.ComponentType<{
 
 const supportLinks: Array<{ href: Route; label: string; icon: React.ComponentType<{ className?: string }> }> = [
   { href: "/provider/medications", label: "Medications", icon: Pill },
-  { href: "/provider/messaging", label: "Messaging", icon: MessageSquareText },
-  { href: "/provider/invitations", label: "Invitations", icon: MailPlus }
+  { href: "/provider/messaging", label: "Messaging", icon: MessageSquareText }
 ];
 
 export function ProviderNav() {
@@ -118,12 +116,12 @@ export function ProviderNav() {
         </div>
       </nav>
 
-      <div className="mt-auto shrink-0 rounded-2xl border border-white/8 bg-white/[0.04] p-3">
+      <div className="mt-auto shrink-0 rounded-2xl border border-white/8 bg-white/[0.04] p-2.5">
         <div className="flex items-center gap-2 text-emerald-200">
           <ShieldCheck className="h-4 w-4" />
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-emerald-200/90">Shift summary</p>
         </div>
-        <div className="mt-3 grid grid-cols-2 gap-2">
+        <div className="mt-2 grid grid-cols-2 gap-2">
           <div className="rounded-xl border border-white/6 bg-slate-950/40 px-3 py-2">
             <p className="text-base font-semibold text-white">18</p>
             <p className="mt-1 text-[0.65rem] uppercase tracking-[0.16em] text-slate-500">patients active</p>
@@ -132,9 +130,6 @@ export function ProviderNav() {
             <p className="text-base font-semibold text-white">6</p>
             <p className="mt-1 text-[0.65rem] uppercase tracking-[0.16em] text-slate-500">invites pending</p>
           </div>
-        </div>
-        <div className="mt-3 rounded-xl border border-emerald-400/12 bg-emerald-400/6 px-3 py-2.5">
-          <p className="text-[11px] leading-5 text-slate-300">Invites, plans, and outreach queues are stable.</p>
         </div>
       </div>
     </div>

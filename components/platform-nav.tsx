@@ -11,8 +11,7 @@ const links: Array<{ href: Route; label: string }> = [
   { href: "/care-plans", label: "Care Plans" },
   { href: "/appointments", label: "Appointments" },
   { href: "/medications", label: "Medications" },
-  { href: "/messages", label: "Messaging" },
-  { href: "/provider/invitations", label: "Invitations" }
+  { href: "/messages", label: "Messaging" }
 ];
 
 export function PlatformNav() {
