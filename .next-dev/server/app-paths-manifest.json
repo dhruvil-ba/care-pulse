@@ -1,3 +1,8 @@
 {
-  "/analytics/page": "app/analytics/page.js"
+  "/analytics/page": "app/analytics/page.js",
+  "/api/me/route": "app/api/me/route.js",
+  "/(platform)/care-plans/page": "app/(platform)/care-plans/page.js",
+  "/(platform)/appointments/page": "app/(platform)/appointments/page.js",
+  "/(platform)/medications/page": "app/(platform)/medications/page.js",
+  "/(platform)/messages/page": "app/(platform)/messages/page.js"
 }

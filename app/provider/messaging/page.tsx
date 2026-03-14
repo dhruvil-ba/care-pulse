@@ -1,16 +1,14 @@
-import { MessageForm } from "@/components/message-form";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { MessagingWorkspace } from "@/components/provider/messaging-workspace";
+import { getProviderMessagingSeed } from "@/lib/messaging-data";
 
 export default function ProviderMessagingPage() {
+  const messagingSeed = getProviderMessagingSeed();
+
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle>Secure Messaging</CardTitle>
-        <CardDescription>HIPAA-compliant chat with your care team and patients.</CardDescription>
-      </CardHeader>
-      <CardContent>
-        <MessageForm />
-      </CardContent>
-    </Card>
+    <MessagingWorkspace
+      providerId={messagingSeed.providerId}
+      contacts={messagingSeed.contacts}
+      initialMessages={messagingSeed.messages}
+    />
   );
 }
