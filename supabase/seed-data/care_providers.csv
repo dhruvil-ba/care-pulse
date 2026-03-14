@@ -1,0 +1,3 @@
+id,user_id,first_name,last_name,specialty,clinic_name,npi,created_at
+aaaaaaaa-0000-4000-8000-000000000001,22222222-2222-4222-8222-222222222222,Nisha,Shah,Endocrinology,Care Pulse Downtown,1987654321,2026-03-01T09:15:00Z
+aaaaaaaa-0000-4000-8000-000000000002,33333333-3333-4333-8333-333333333333,Owen,Miller,Internal Medicine,Care Pulse North,1876543210,2026-03-01T09:20:00Z

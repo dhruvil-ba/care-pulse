@@ -1,0 +1,4 @@
+id,code,display_name,description,created_at
+cccccccc-0000-4000-8000-000000000001,diabetes,Diabetes,Chronic metabolic disease requiring glucose management.,2026-03-01T10:00:00Z
+cccccccc-0000-4000-8000-000000000002,hypertension,Hypertension,Persistent elevated blood pressure requiring ongoing control.,2026-03-01T10:00:00Z
+cccccccc-0000-4000-8000-000000000003,copd,COPD,Chronic obstructive pulmonary disease with respiratory limitations.,2026-03-01T10:00:00Z

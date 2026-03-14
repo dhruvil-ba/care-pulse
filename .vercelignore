@@ -1,0 +1,9 @@
+node_modules
+.next
+.git
+.DS_Store
+*.log
+*.tsbuildinfo
+wellframe_blueprint_*.pdf
+supabase/.temp
+supabase/.branches

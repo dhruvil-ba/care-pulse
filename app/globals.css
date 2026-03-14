@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 224 34% 6%;
+  --foreground: 220 18% 94%;
+  --card: 224 28% 10%;
+  --card-foreground: 220 18% 94%;
+  --popover: 224 28% 10%;
+  --popover-foreground: 220 18% 94%;
+  --primary: 160 84% 39%;
+  --primary-foreground: 165 80% 6%;
+  --secondary: 218 18% 15%;
+  --secondary-foreground: 220 15% 92%;
+  --muted: 219 17% 16%;
+  --muted-foreground: 215 10% 70%;
+  --accent: 156 82% 42%;
+  --accent-foreground: 165 85% 6%;
+  --success: 152 70% 40%;
+  --success-foreground: 150 70% 96%;
+  --warning: 45 90% 50%;
+  --warning-foreground: 28 40% 12%;
+  --danger: 0 72% 51%;
+  --danger-foreground: 0 85% 97%;
+  --border: 218 20% 22%;
+  --input: 218 20% 22%;
+  --ring: 160 84% 39%;
+  --radius: 1rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html,
+  body {
+    @apply bg-background text-foreground min-h-screen antialiased;
+  }
+
+  body {
+    background-image: radial-gradient(circle at 20% 20%, rgba(16, 185, 129, 0.16), transparent 32%),
+      radial-gradient(circle at 85% 15%, rgba(34, 197, 94, 0.12), transparent 30%),
+      radial-gradient(circle at 50% 85%, rgba(6, 182, 212, 0.1), transparent 35%);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display), sans-serif;
+  }
+
+  a,
+  button,
+  [role="button"] {
+    cursor: pointer;
+  }
+
+  button:disabled,
+  [role="button"][aria-disabled="true"] {
+    cursor: not-allowed;
+  }
+}
+
+input[type="datetime-local"].datetime-input {
+  color-scheme: dark;
+}
+
+input[type="datetime-local"].datetime-input::-webkit-calendar-picker-indicator {
+  opacity: 0.7;
+  filter: invert(1) sepia(1) saturate(4) hue-rotate(120deg);
+}
+
+input[type="datetime-local"].datetime-input:invalid::-webkit-datetime-edit {
+  color: rgb(148 163 184 / 0.8);
+}
+
+input[type="datetime-local"].datetime-input:valid::-webkit-datetime-edit {
+  color: rgb(226 232 240 / 0.95);
+}
+
+@layer components {
+  .glass-card {
+    @apply border border-white/10 bg-white/5 backdrop-blur-xl shadow-glass;
+  }
+
+  .glass-nav {
+    @apply border border-emerald-400/20 bg-zinc-900/55 backdrop-blur-2xl shadow-glow;
+  }
+}
