@@ -28,10 +28,47 @@ declare namespace __next_route_internal_types__ {
   type OptionalCatchAllSlug<S extends string> =
     S extends `${string}${SearchOrHash}` ? never : S
 
-  type StaticRoutes = never
-  type DynamicRoutes<T extends string = string> = never
+  type StaticRoutes = 
+    | `/`
+    | `/appointments`
+    | `/care-plans`
+    | `/messages`
+    | `/patients`
+    | `/profile`
+    | `/medications`
+    | `/analytics`
+    | `/api/analytics`
+    | `/api/appointments`
+    | `/api/invitations/accept`
+    | `/api/care-plans`
+    | `/api/me`
+    | `/api/medications`
+    | `/api/patients`
+    | `/api/messages`
+    | `/invitations`
+    | `/invite`
+    | `/login`
+    | `/provider`
+    | `/provider/analytics`
+    | `/provider/appointments`
+    | `/provider/invitations`
+    | `/provider/care-plans`
+    | `/provider/messaging`
+    | `/provider/medications`
+    | `/provider/patients`
+    | `/provider/signup`
+    | `/signup`
+  type DynamicRoutes<T extends string = string> = 
+    | `/patients/${SafeSlug<T>}`
+    | `/provider/patients/${SafeSlug<T>}`
 
-  type RouteImpl<T> = string
+  type RouteImpl<T> = 
+    | StaticRoutes
+    | SearchOrHash
+    | WithProtocol
+    | `${StaticRoutes}${SearchOrHash}`
+    | (T extends `${DynamicRoutes<infer _>}${Suffix}` ? T : never)
+    
 }
 
 declare module 'next' {

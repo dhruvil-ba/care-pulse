@@ -9,9 +9,11 @@ import {
   ChevronRight,
   ClipboardList,
   HeartPulse,
+  MailPlus,
   MessageSquareText,
   Pill,
-  ShieldCheck
+  ShieldCheck,
+  Users
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -23,12 +25,18 @@ const baseLinks: Array<{ href: Route; label: string; icon: React.ComponentType<{
   { href: "/messages", label: "Messaging", icon: MessageSquareText }
 ];
 
+const providerOnlyLinks: Array<{ href: Route; label: string; icon: React.ComponentType<{ className?: string }> }> = [
+  { href: "/patients", label: "Patients", icon: Users },
+  { href: "/invitations", label: "Invitations", icon: MailPlus }
+];
+
 type SidebarClientProps = {
   role: "provider" | "patient" | null;
 };
 
 export function SidebarClient({ role }: SidebarClientProps) {
   const pathname = usePathname();
+  const links = role === "provider" ? [...baseLinks, ...providerOnlyLinks] : baseLinks;
   const summary = role === "provider"
     ? {
         badge: "Provider mode",
@@ -62,7 +70,7 @@ export function SidebarClient({ role }: SidebarClientProps) {
       <nav aria-label="Primary" className="space-y-2">
         <p className="px-1 text-[0.65rem] font-semibold uppercase tracking-[0.3em] text-slate-500">Workspace</p>
         <div className="grid gap-1">
-          {baseLinks.map((link) => {
+          {links.map((link) => {
             const isActive = pathname === link.href;
             const Icon = link.icon;
             return (

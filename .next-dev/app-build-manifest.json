@@ -35,6 +35,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(platform)/messages/page.js"
+    ],
+    "/(platform)/patients/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(platform)/patients/page.js"
     ]
   }
 }
